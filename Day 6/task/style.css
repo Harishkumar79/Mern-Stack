@@ -1,0 +1,323 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+    width: fit-content;
+    margin: 0px 20px;
+    font-size: 3rem;
+    color: white;
+    font-family: 'League Gothic';
+    letter-spacing: 1.5px;
+}
+
+ul {
+    margin-left: -40px;
+    padding-top: 50px;
+}
+
+#logo {
+    width: 200px;
+    height:200px;
+}
+
+#navbar {
+    border: 1px solid black;
+    overflow: auto;
+    display: flex;
+    justify-content:space-evenly;
+    background-color: black;
+    position: fixed;
+    height: 180px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#landing {
+    border: 1px solid black;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Soria";
+    background-image: url(./c3dtrpkq.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+#landing_h1 {
+    font-size: 10rem;
+}
+
+#landing_h2 {
+    font-size: 3.5rem;
+    margin-bottom: -100px;
+}
+
+.space {
+    height: 180px;
+}
+
+.content {
+    font-size: 3rem;
+    padding:0px 20px;
+    text-align: justify;
+}
+
+.heading {
+    font-size: 7rem;
+    font-family: 'League Gothic';
+    letter-spacing: 1.5px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    background-size: cover;
+    margin: 5px;
+}
+
+.home_heading {
+    background-image: url(home.jpg);
+    background-size: cover;
+    color: black;
+}
+
+.about_heading {
+    background-image: url(about.jpg);
+}
+
+.contact_heading {
+    background-image: url(contact.jpg);
+}
+
+.faq_heading {
+    background-image: url(faq.jpg);
+}
+
+hr {
+    margin-top: 10px;
+}
+
+
+@media (max-width:1024px) {
+    #navbar {
+        height: 140px;
+        overflow: hidden;
+        justify-content: space-evenly;
+
+    }
+
+    li {
+        font-size: 2.2rem;
+        margin: 0px 20px;
+        width: fit-content;
+    }
+
+    ul{
+        padding:30px 0px 0px 0px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 100px;
+        padding-top: 10px;
+    }
+
+    .space {
+        height: 142px;
+    }
+
+    #landing {
+        height: 85vh;
+    }
+
+    #landing_h1 {
+        font-size: 9rem;
+    }
+
+    #landing_h2 {
+        font-size: 2.5rem;
+        margin-bottom: -90px;
+    }
+
+    .heading {
+        font-size: 4.5rem;
+        margin: 10px;
+    }
+
+    hr {
+        margin-top: 10px;
+    }
+
+    .content {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    #navbar {
+        height: 120px;
+        overflow: hidden;
+        justify-content:space-evenly;
+    }
+
+    li {
+        font-size: 2rem;
+        margin: 0 18px;
+        width: fit-content;
+        padding-top: 20px;
+        letter-spacing: normal;
+    }
+
+    ul {
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+        padding-top: 10px;
+    }
+
+    .space {
+        height: 122px;
+    }
+
+    #landing {
+        height: 85vh;
+    }
+
+    #landing_h1 {
+        font-size: 8rem;
+    }
+
+    #landing_h2 {
+        font-size: 2.5rem;
+        margin-bottom: -80px;
+    }
+
+    .heading {
+        font-size: 4rem;
+        margin: 10px;
+    }
+
+    hr {
+        margin-top: 10px;
+    }
+
+    .content {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:640px) {
+    #navbar {
+        height: 85px;
+        overflow: hidden;
+    }
+
+    li {
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+
+    ul {
+        padding-left: 0px;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+        padding-left: 20px;
+    }
+
+    .space {
+        height: 85px;
+    }
+
+    #landing {
+        height: 85vh;
+    }
+
+    #landing_h1 {
+        font-size: 6rem;
+    }
+
+    #landing_h2 {
+        font-size: 2rem;
+        margin-bottom: -60px;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+        margin: 0px;
+    }
+
+    .content {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:480px) {
+    #navbar {
+        flex-direction: column;
+        justify-content: start;
+        overflow: hidden;
+        height: 280px;
+    }
+
+    li {
+        font-size: 1.5rem;
+        width: 480px;
+    }
+
+    ul {
+        padding: 0px 20px;
+    }
+
+    #logo {
+        width: 50px;
+        height: 50px;
+        padding-left: 20px;
+    }
+
+    .space {
+        height: 290px;
+    }
+
+    #landing {
+        height: 65vh;
+    }
+
+    #landing_h1 {
+        font-size: 4.5rem;
+    }
+
+    #landing_h2 {
+        font-size: 1.5rem;
+        margin-bottom: -40px;
+    }
+
+    .heading {
+        font-size: 3rem;
+        margin: 0px;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+}

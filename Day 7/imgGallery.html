@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG Gallery</title>
+
+    <style>
+        img{
+            width: 500px;
+            height: 300px;
+        }
+
+        #img_2{
+            transform: translateX(-504px);
+            opacity: 1;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        #img_2:hover{
+            opacity: 0;
+        } 
+
+        #img2{
+            height: 300px;
+            width: 500px;
+            border: 1px solid black;
+            background-image: url(/Day7/pexels-photo-707344.jpeg);
+            transition-property: all;
+            transition-duration: 1s;
+            background-size: cover;
+
+        }
+        #img2:hover{
+            background-size: cover;
+            background-image: url(/Day7/pexels-photo-3408744.jpeg);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="img1">
+            <img src="./pexels-photo-707344.jpeg" id="img_1" alt="img">
+            <img src="./pexels-photo-3408744.jpeg"  id="img_2" alt="img">
+        </div>
+        <div id="img2">
+        </div>
+    </div>
+</body>
+</html>

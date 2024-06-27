@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Four</title>
+
+    <style>
+        body {
+            background: rgb(19, 222, 111);
+            background: linear-gradient(158deg, rgba(19, 222, 111, 1) 0%, rgba(121, 121, 193, 1) 40%, rgba(0, 212, 255, 1) 100%);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        .col {
+            border: 1px solid black;
+            width: 400px;
+            /* height: 480px; */
+            background-color: cyan;
+            padding-bottom: 10px;
+        }
+
+        .col-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .See-more{
+            text-decoration: none;
+            color: black;
+            padding-left:15px;
+        }
+
+        h2{
+            padding:0px 15px;
+        }
+
+        .description{
+            margin-top: 0px;
+        }
+
+        .sign{
+            border: 1px solid black;
+            background-color: yellow;
+            border-radius: 20px;
+            width: 350px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .special{
+            margin-top: 50px;
+        }
+
+        .col-sign{
+            height: 140px;
+            width: 400px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <h2>Automotive essentials | Up to 60% off</h2>
+            <div class="col-item">
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Cleaning Accessries</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Tyre & rim care</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Helmets</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Vacuum cleaner</p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="See-more">See more</a>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Appliances for your home | Up to 55% off</h2>
+            <div class="col-item">
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Air Conditioners</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Refrigerators</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Microwaves</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Washing machines</p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="See-more">See more</a>
+            </div>
+        </div>
+        <div class="col">
+            <h2>UP to 60% off | Clearance</h2>
+            <div class="col-item">
+                <div>
+                    <img src="./automotive.jpeg" width="370px" height="370px" alt="img">
+                </div>
+            </div>
+            <div>
+                <a href="#" class="See-more">See more</a>
+            </div>
+        </div>
+        <div class="col col-sign">
+            <h2>Sign in for your best experience</h2>
+            <div class="col-item">
+                <div>
+                    <button type="button" class="sign">Sign in securly</button>
+                </div>
+            </div>
+            <div class="special">
+                <img src="./automotive.jpeg" width="350px" height="310px" alt="img">
+            </div>
+        </div>
+        <div class="col">
+            <h2>Up to 60% off | Wardrobe Refresh Sale</h2>
+            <div class="col-item">
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Clothing</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Footwear</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Watches</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Bags & luggage</p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="See-more">See more</a>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Super value days | Up to 35% off | Summer</h2>
+            <div class="col-item">
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Health drinks</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Juices & drink mixes</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Skin & hair care</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Baby care</p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="See-more">See more</a>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Up to 60% off |  Professional tools, testing & more</h2>
+            <div class="col-item">
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Professional tools</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Measuring instruments</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Cleaning supplies</p>
+                </div>
+                <div>
+                    <img src="./automotive.jpeg" width="180px" height="130px" alt="img">
+                    <p class="description">Medical supplies</p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="See-more">See more</a>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Up to 30% off on medicines</h2>
+            <div class="col-item">
+                <div>
+                    <img src="./automotive.jpeg" width="380px" height="370px" alt="img">
+                </div>
+            </div>
+            <div>
+                <a href="#" class="See-more">Visit the store</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
