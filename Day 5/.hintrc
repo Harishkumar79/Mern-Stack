@@ -3,10 +3,12 @@
     "development"
   ],
   "hints": {
-    "axe/name-role-value": [
+    "compat-api/css": [
       "default",
       {
-        "button-name": "off"
+        "ignore": [
+          "width: fit-content"
+        ]
       }
     ]
   }

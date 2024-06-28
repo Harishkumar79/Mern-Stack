@@ -3,31 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transition</title>
+    <title>Animation</title>
 
     <style>
-        div{
+        #outer{
+            width: 100%;
+            height: 500px;
             border: 1px solid black;
-            height: 300px;
-            width: 300px;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 50px;
-            transition-property: all;
-            transition-duration: 1s;
         }
 
-        div:hover{
-            /* background-color: black;
-            color: white; */
-            box-shadow:0px 0px 10px 10px black;
+        #inner{
+            width: 100%;
+            height: 500px;
+            animation-name: loading_bar;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+           
         }
+
+        @keyframes loading_bar {
+            0%{
+                width: 0px;
+                background-color: white;
+            }
+            100%{
+                width: 100%;
+                background-color: black;
+            }
+        }
+
     </style>
 </head>
-
 <body>
-    <div>
-        <h1>Hello World</h1>
+    <div id="outer">
+        <div id="inner"></div>
     </div>
 </body>
 </html>

@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Transition</title>
 
+    <style>
+        div{
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            transition-property: all;
+            transition-duration: 1s;
+        }
 
-    <link rel="stylesheet" href="./style.css">
+        div:hover{
+            /* background-color: black;
+            color: white; */
+            box-shadow:0px 0px 10px 10px black;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="navbar">
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Contact Us</a></li>
-                <li><a>FAQ</a></li>
-            </ul>
-        </div>
+    <div>
+        <h1>Hello World</h1>
     </div>
 </body>
 </html>
