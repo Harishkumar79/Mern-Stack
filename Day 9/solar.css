@@ -1,0 +1,191 @@
+body{
+    background-color: black;
+}
+#container{
+    height: 98vh;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sun{
+    height: 200px;
+    width: 200px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    background-image: linear-gradient(yellow,orange,red,orange,yellow);
+    /* animation-name: solar; */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes solar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.orbit{
+    border: 1px solid white;
+    border-radius: 100%;
+}
+.orbit-earth{
+    width: 400px;
+    height: 400px;
+    /* transform: translate(-100px,-100px); */
+    margin: -100px -100px;
+    animation-name: solar;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+#earth{
+    height: 50px;
+    width: 50px;
+    border: 1px solid transparent;
+    background-image: linear-gradient(green,lightblue,blue,skyblue,green);
+    border-radius: 100%;
+    margin-left: 75px;
+    animation-name: solar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    
+}
+
+.orbit-moon{
+    height: 90px;
+    width: 90px;
+    transform: translate(-20px,-20px);
+}
+#moon{
+    height: 12.5px;
+    width: 12.5px;
+    border: 1px solid white;
+    background-color: gray;
+    border-radius: 100%;
+    transform: translateX(12px);
+}
+
+.orbit-mars{
+    width: 550px;
+    height: 550px;
+    border: 1px solid white;
+    border-radius: 100%;
+    /* transform: translate(-180px, -580px); */
+    margin: -485px -180px;
+    animation-name: solar;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+#mars{
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 100%;
+    transform: translateX(145px);
+    background-image: linear-gradient(#99857A, #C67B5C,#E27B58,#663926,#8E6A5A);
+}
+
+.orbit-jupyter{
+    width: 750px;
+    height: 750px;
+    border: 1px solid white;
+    border-radius: 100%;
+    /* transform: translate(-280px, -1235px); */
+    margin: -660px  -280px;
+    animation-name: solar;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+#jupyter{
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 100%;
+    transform: translateX(160px);
+    background-image: linear-gradient(#8E6A5A, #A79C86,#D2CFDA,#D39C7E,#90614D,#C88B3A);
+}
+
+.orbit-saturn{
+    width: 930px;
+    height: 930px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin:-830px  -375px;
+    animation-name: solar;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+#saturn{
+    height: 65px;
+    width: 65px;
+    border: 1px solid white;
+    border-radius: 100%;
+    transform: translateX(250px);
+    background-image: linear-gradient(#C88B3A, #7B7869,#A49B72,#C5AB6E,#C3A171);
+}
+
+.orbit-uranus{
+    width: 1100px;
+    height: 1100px;
+    border: 1px solid white;
+    border-radius: 100%;
+    /* transform: translate(-280px, -1235px); */
+    margin:-1000px  -465px;
+    animation-name: solar;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+#uranus{
+    height: 55px;
+    width: 55px;
+    border: 1px solid white;
+    border-radius: 100%;
+    transform: translateX(350px);
+    background-image: linear-gradient(#546a8c, #107f7c,#202b31,#15f4ee);
+}
+
+.orbit-neptune{
+    width: 1300px;
+    height: 1300px;
+    border: 1px solid white;
+    border-radius: 100%;
+    /* transform: translate(-280px, -1235px); */
+    margin: -1201px  -565px;
+    animation-name: solar;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+#neptune{
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 100%;
+    transform: translateX(380px);
+    background-image: linear-gradient(#7D8ABC,#304463);
+}
+
