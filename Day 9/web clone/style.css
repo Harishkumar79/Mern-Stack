@@ -1,0 +1,143 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#top_bar{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    padding: 10px;
+}
+
+.nav_li{
+    float: left;
+    list-style-type: none;
+    margin: 0px 20px;
+    font-size: 1.5rem;
+    font-family: 'FONTSPRING DEMO - The Seasons';
+}
+
+.icons{
+    transform: translateX(40vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    height: 50px;
+}
+
+.nav_icons_img {
+    height: 40px;
+    width: 40px;
+}
+
+.nav_icons{
+    list-style-type: none;
+    float: left;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.nav_span{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#navbar{
+    border: 1px solid transparent;
+    height: 10vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing{
+    height: 80vh;
+    border: 1px solid black;
+    background-image: url("https://buildminibricks.com/cdn/shop/files/IMG_4681_3.heic?v=1717273792&width=2000");
+    background-color: #0000008a;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+h1{
+    font-family: "FONTSPRING DEMO - The Seasons";
+}
+
+h3{
+    margin-top: 0px;
+    font-family: "FONTSPRING DEMO - The Seasons";
+}
+
+button{
+    padding: 15px;
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bolder;
+    /* font-family: "FONTSPRING DEMO - The Seasons"; */
+}
+
+#banner{
+    width: 100%;
+}
+
+.preview{
+    border: 1px solid transparent;
+    margin:50px;
+}
+
+#card_container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    margin-top: 50px;
+}
+
+.card{
+    height: 400px;
+    width: 330px;
+}
+
+.card_img_div{
+    height: 330px;
+    width: 330px;
+    border: 1px solid transparent;
+}
+
+.card_img{
+    height: 330px;
+    width: 330px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.card_info{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+
+    h4{
+        cursor: pointer;
+    }
+
+    p{
+        margin-top: -15px;
+        color: rgba(25, 25, 25, 0.6);
+    }
+}
