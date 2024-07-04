@@ -1,9 +1,12 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
-#top_bar{
+
+#top_bar {
     background-color: black;
     color: white;
     font-size: 1.5rem;
@@ -14,7 +17,7 @@ body{
     padding: 10px;
 }
 
-.nav_li{
+.nav_li {
     float: left;
     list-style-type: none;
     margin: 0px 20px;
@@ -22,7 +25,7 @@ body{
     font-family: 'FONTSPRING DEMO - The Seasons';
 }
 
-.icons{
+.icons {
     transform: translateX(40vh);
     display: flex;
     justify-content: center;
@@ -36,18 +39,18 @@ body{
     width: 40px;
 }
 
-.nav_icons{
+.nav_icons {
     list-style-type: none;
     float: left;
     margin-right: 8px;
     cursor: pointer;
 }
 
-.nav_span{
-    font-family:Arial, Helvetica, sans-serif;
+.nav_span {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#navbar{
+#navbar {
     border: 1px solid transparent;
     height: 10vh;
     overflow: auto;
@@ -56,7 +59,7 @@ body{
     align-items: center;
 }
 
-#landing{
+#landing {
     height: 80vh;
     border: 1px solid black;
     background-image: url("https://buildminibricks.com/cdn/shop/files/IMG_4681_3.heic?v=1717273792&width=2000");
@@ -68,19 +71,19 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
-h1{
-    font-family: "FONTSPRING DEMO - The Seasons";
+h1 {
+    font-family: "Quantico", sans-serif;
 }
 
-h3{
+h3 {
     margin-top: 0px;
     font-family: "FONTSPRING DEMO - The Seasons";
 }
 
-button{
+button {
     padding: 15px;
     width: 150px;
     font-size: 1rem;
@@ -92,52 +95,295 @@ button{
     /* font-family: "FONTSPRING DEMO - The Seasons"; */
 }
 
-#banner{
+#banner {
     width: 100%;
 }
 
-.preview{
+.preview {
     border: 1px solid transparent;
-    margin:50px;
+    margin: 50px;
+
+    h1 {
+        font-family: "Quantico", sans-serif;
+    }
 }
 
-#card_container{
+.card_container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid transparent;
     margin-top: 50px;
 }
 
-.card{
+.card {
     height: 400px;
     width: 330px;
 }
 
-.card_img_div{
+.card_img_div {
     height: 330px;
     width: 330px;
     border: 1px solid transparent;
 }
 
-.card_img{
+.card_img {
     height: 330px;
     width: 330px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     cursor: pointer;
+    position: absolute;
 }
 
-.card_info{
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-
-    h4{
+.card_button{
+    position: relative;
+    top: 85%;
+    left: 60%;
+    opacity: 0;
+    width: 120px;
+    transition-property: all;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+    transform: translateX(0px);
+    
+    button{
+        font-size: small;
+        background-color: black;
+        width: 120px;
         cursor: pointer;
     }
 
-    p{
+    button:hover{
+        background-color: #0000009a;
+    }
+}
+
+.card:hover{
+    .card_button{
+        opacity: 1;
+        transform: translateY(-15px);
+    }
+}
+
+
+.card_info {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    h4 {
+        cursor: pointer;
+    }
+
+    p {
         margin-top: -15px;
         color: rgba(25, 25, 25, 0.6);
+    }
+}
+
+.card_box{
+    width: fit-content;
+
+    .box_btn{
+        left: 90%;
+    }
+}
+
+.card_box:hover{
+    .box_btn{
+        opacity: 1;
+        transform: translateY(-15px);
+    }
+}
+
+.box_img {
+    width: 696.2px;
+    height: 692.2px;
+}
+
+.box_info {
+    margin-left: -700px;
+    margin-top: -10px;
+}
+
+.card_hobby {
+    width: 450px;
+    height: 450px;
+    border: 1px solid transparent;
+    background-color: #0000008a;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 10px;
+
+    h4 {
+        font-size: 2.5rem;
+        font-family: "Quantico", sans-serif;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.card_hobby1 {
+    background-image: url("./img/bikes.webp");
+}
+
+.card_hobby2 {
+    background-image: url("./img/garage.webp");
+}
+
+.card_hobby3 {
+    background-image: url("./img/MYSTERYBox2.webp");
+}
+
+.hobby_img {
+    width: 450px;
+    height: 450px;
+}
+
+
+
+
+#landing {
+    height: 80vh;
+    border: 1px solid black;
+    background-image: url("https://buildminibricks.com/cdn/shop/files/IMG_4681_3.heic?v=1717273792&width=2000");
+    background-color: #0000008a;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+
+    ul {
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 800px;
+        background-color: rgba(224, 218, 207, 0.867);
+
+        li {
+            list-style-type: none;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 40px;
+            margin-left: -40px;
+            padding-left: 10px;
+            padding-top: 10px;
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+#response {
+    margin-top: -10px;
+    opacity: 0.7;
+}
+
+.footer {
+    height: 400px;
+    margin: 40px 0px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    h4 {
+        font-family: Arial, Helvetica, sans-serif;
+         margin-bottom: 40px;
+    }
+
+    p{
+        color: #ffffffb5;
+    }
+}
+
+#footer_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ftop_1{
+    input{
+        background-color: transparent;
+        border: 1px solid  #ffffff9a;
+        width: 100%;
+        height: 40px;
+        font-size: 1rem;
+        padding-left: 10px;
+        border-radius: 5px;
+        margin-top: -20px;
+    }
+
+    h4{
+        color: #ffffffb5;
+    }
+}
+
+#footer_bottom{
+    margin-top: 50px;
+
+    .fbot_1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer_icon{
+        width: 30px;
+        height:30px;
+        margin-right: 10px;
+        background-color: white;
+    }
+
+    .footer_img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .bot_row2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    select{
+        color: white;
+        margin-left: 10px;
+        background-color: transparent;
+
+        option{
+            background-color: black;
+        }
+    }
+
+
+    .fbot_2{
+        margin-top: 50px;
+        font-size: small;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            cursor: pointer;
+        }
     }
 }
