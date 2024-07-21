@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Colors</title>
+
+    <style>
+        h1 {
+            font-family: 'FONTSPRING DEMO - The Seasons';
+            font-size: 10rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Hello World</h1>
+    </div>
+
+
+    <script>
+
+        function randomColors() {
+            let color_elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 'a', 'b', 'c', 'd', 'e', 'f'],
+                colors1 = "", colors2 = ""
+            for (let i = 0; i < 6; i++) {
+                let index1 = Math.round(Math.random() * (color_elements.length - 1))
+                let index2 = Math.round(Math.random() * (color_elements.length - 1))
+
+                if (index1 != undefined && index2 != undefined) {
+                    colors1 += String(color_elements[index1])
+                    colors2 += String(color_elements[index2])
+                }
+            }
+            document.body.style.backgroundColor = '#' + colors1
+            document.getElementById("heading").style.color = '#' + colors2
+        }
+        setInterval(randomColors, 2000)
+
+    </script>
+</body>
+
+</html>
