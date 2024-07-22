@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tags</title>
+</head>
+<body>
+    <form action="index.html">
+        <label>First Name</label>
+        <input type="text" placeholder="First Name" required>
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name" value="Last Name" disabled>
+        <br><br>
+        <label>Age</label>
+        <input type="number" placeholder="Age" min="10" max="12">
+        <br><br>
+        <label>Date of Birth</label>
+        <input type="date">
+        <label>Date of Birth + Time</label>
+        <input type="datetime-local">
+        <br><br>
+        <label>Email</label>
+        <input type="email" placeholder="Email">
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+        <br><br>
+        <label>Search Box</label>
+        <input type="search" placeholder="Search">
+        <br><br>
+        <label>Color</label>
+        <input type="color">
+        <br><br>
+        <label>Gender</label>
+        <input type="radio" name="gender" checked> <label>Male</label>
+        <input type="radio" name="gender"> <label>Female</label>
+        <br><br>
+        <label>Programming Languages</label>
+        <input type="checkbox" name="programming" checked> <label>C/C++</label>
+        <input type="checkbox" name="programming" checked> <label>JS</label>
+        <input type="checkbox" name="programming" checked> <label>Python</label>
+        <br><br>
+        <label>Country</label>
+        <select>
+            <option>--Select your country--</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>Australia</option>
+            <option>New Zealand</option>
+        </select>
+        <br><br>
+        <dl>
+            <dt><label>Address</label></dt>
+            <dd><textarea rows="10" cols="30"></textarea></dd>
+        </dl>
+        <br>
+        <input type="submit" value="Store">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
