@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verify user data</title>
+</head>
+<body>
+    <div>
+        <h1>Congratulations, your data has been stored</h1>
+        <h3>Kindly, verify your data</h3>
+        <ul id="data">
+
+        </ul>
+        <a href="./index.html">Edit</a>
+    </div>
+    <script>
+        let output_string = ""
+        let uData = JSON.parse(localStorage.getItem("uData"))
+        console.log(uData)
+
+        for (const key in uData) {
+            if (Object.hasOwnProperty.call(uData, key)) {
+                const element = uData[key];
+                output_string += `<li> ${key} -> ${element} </li>`
+            }
+        }
+
+        document.getElementById("data").innerHTML = output_string
+        
+    
+        
+    </script>
+</body>
+</html>

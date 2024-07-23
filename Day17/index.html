@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User data handling</title>
+</head>
+<body>
+
+    <input type="text" id="username" placeholder="User Name">
+    <br><br>
+    <input type="number" id="age" placeholder="Age">
+    <br><br>
+    <input type="email" id="email" placeholder="Email">
+    <br><br>
+    <input type="password" id="password" placeholder="Password">
+    <input type="button" id="show-btn" value="Show Password" onclick="passwordManager()">
+    <br><br>
+    <input type="date" id="dob">
+    <br><br>
+    <input type="color" id="clr">
+    <br><br>
+
+    <select id="country">
+        <option>--select your country</option>
+        <option>India</option>
+        <option>Us</option>
+        <option>China</option>
+    </select>
+    <br><br>
+
+    <label>Gender</label>
+    <input type="radio" id="gender" name="gender" value="male"><label>male</label>
+    <input type="radio" id="gender" name="gender" value="female"><label>female</label>
+    <br><br>
+
+    <label>programing languages</label>
+    <input type="checkbox" id="language" value="js"><label>Js</label>
+    <input type="checkbox" id="language" value="python"><label>Python</label>
+    <input type="checkbox" id="language" value="java"><label>Java</label>
+    <br><br>
+    <input type="button" value="store" onclick="storeData()">
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
