@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timmer using Vanilla JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Timmer</h1>
+        <input type="text" name="inp-hour" id="inp-hour" value="00">
+        <input type="text" name="hour-place" id="hour-place" value="h" class="clock" disabled>
+        <input type="text" name="inp-min" id="inp-min" value="00">
+        <input type="text" name="min-place" id="hour-place" value="m" class="clock" disabled>
+        <input type="text" name="inp-sec" id="inp-sec" value="00">
+        <input type="text" name="sec-place" id="hour-place" value="s" class="clock" disabled>
+        <br>
+        <div id="output">
+            <h1>
+                <span id="hour" class="op">00</span>h
+                <span id="min" class="op">00</span>m
+                <span id="sec" class="op">00</span>s
+            </h1>
+            <button onclick="timmerFunc()">Start</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

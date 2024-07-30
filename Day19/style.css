@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    font-family: 'Fira Code';
+    font-weight: 500;
+}
+
+#container {
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 7px white;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    transform: scale(1.5);
+    width: 30px;
+    margin: 0px 18px;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0px 15px;
+    transform: scale(1.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.clock {
+    width: 12px;
+    margin-left: -35px;
+    border-color: transparent;
+}
+
+#output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
