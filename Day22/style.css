@@ -156,6 +156,11 @@ body {
     position: absolute;
 }
 
+.card_box{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
 .card_button {
     position: relative;
     top: 85%;
@@ -271,7 +276,7 @@ body {
         height: 100px;
         color: white;
         background-color: #33333360;
-        border: 1px solid rgba(0, 255, 255, 0.5);
+        border: 1px solid rgb(0, 255, 255);
         border-radius: 5px;
     }
 
@@ -283,8 +288,6 @@ body {
         border: 1px solid cyan;
     }
 }
-
-
 
 
 footer {
