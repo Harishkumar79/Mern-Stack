@@ -4,21 +4,40 @@ var app = express();
 //get
 
 app.get("/",(req,res)=>{
-    // res.send("hello");
+    res.send("hello , how are you? bro");
     // res.json({
     //     name : "hk",
     //     city : "sirohi"
     // });
-    res.sendFile('Express/index.html',(err)=>{
-        res.send("error")
-    })
-}).listen(5048,(req , res)=>{
-    console.log("server start at http://localhost:5048");
+    // res.sendFile(__dirname+ "/index.html",(err)=>{
+    //     res.send("error")
+    // })
 })
 
-app.get('*',(req,res)=>{
-    res.status(404).send("404 page not found");
+//variable or parameters
+
+app.get('/:username/:id' , (req,res)=>{
+    let {username} = req.params;
+    res.send(`welcome to page of ${username}`);
 })
+
+
+//query string
+app.get("/search" , (req,res)=>{
+    let {q} = req.query;
+    if(!q){
+        res.send("No search exist");
+    }
+    res.send(`your are searching for:- ${q}`);
+})
+
+app.listen(5048,(req , res)=>{
+    console.log("server listening at http://localhost:5048");
+})
+
+// app.get('*',(req,res)=>{
+//     res.status(404).send("404 page not found");
+// })
 
 
 //routing variable
