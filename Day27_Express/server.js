@@ -31,7 +31,7 @@ app.get("/search" , (req,res)=>{
     res.send(`your are searching for:- ${q}`);
 })
 
-app.listen(5048,(req , res)=>{
+app.listen(5048,()=>{
     console.log("server listening at http://localhost:5048");
 })
 
