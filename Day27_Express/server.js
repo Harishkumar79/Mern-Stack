@@ -4,7 +4,7 @@ var app = express();
 //get
 
 app.get("/",(req,res)=>{
-    res.send("hello , how are you? bro");
+    res.send("hello , how are you?");
     // res.json({
     //     name : "hk",
     //     city : "sirohi"
@@ -43,5 +43,6 @@ app.listen(5048,()=>{
 //routing variable
 // app.get(){}
 // app.all('*')
+
 
 
