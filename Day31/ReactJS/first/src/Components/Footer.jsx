@@ -7,7 +7,7 @@ function Footer() {
                 <div className="container">
                     <section className="grid">
                         <div className="column-xs-12">
-                            <p className="copyright">&copy; Copyright 2018 Katherine Kato</p>
+                            <p className="copyright">&copy; Copyright 2018 HK sen</p>
                         </div>
                     </section>
                 </div>
