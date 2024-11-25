@@ -6,6 +6,7 @@ import Profile from './Components/Pages/Profile';
 import About from './Components/Pages/About';
 import Contact from './Components/Pages/Contact';
 import Home from './Components/Pages/Home';
+import ProductList from './Components/Products/ProductList';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/products" element={<ProductList />} />
           <Route path="/profile/:uname" element={<Profile />} />
           <Route path="*" element={<h1>Page Not Found !</h1>} />
         </Routes>

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -386,6 +387,35 @@ footer {
     height: 40rem;
   }
 }
+
+/* ------------ProductList---------- */
+
+.card-box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  margin: 5px;
+  justify-content: space-evenly;
+}
+
+.product-card {
+  width: 350px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+  background: #fff;
+}
+
+.img{
+  width: 340px;
+  height: 500px;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
 
 /*---------footer------------- */
 
