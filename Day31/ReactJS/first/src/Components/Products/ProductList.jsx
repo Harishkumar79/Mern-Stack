@@ -17,7 +17,9 @@ function ProductList() {
                                     <div className='title'><h5>{data.title}</h5></div>
                                     <div className='desc'>{data.description}</div>
                                     <div className='price'>${data.price}</div>
-                                    <NavLink to='/'><button type='button'>Add To Cart</button></NavLink>
+                                    <div className='view'></div>
+                                    <NavLink id='view-more' to='/'>View more</NavLink>
+                                    <NavLink to='/'><button id='card-btn' type='button'>Add To Cart</button></NavLink>
                                 </div>
                             </>
                         )
