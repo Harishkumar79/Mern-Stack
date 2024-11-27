@@ -80,7 +80,6 @@ const ContactUs = () => {
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17251.26544568053!2d72.65398387962865!3d24.636345791695142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395cd4d3731b188f%3A0x417d1ad42e04ff21!2sAnadra%2C%20Rajasthan%20307511!5e0!3m2!1sen!2sin!4v1732467927476!5m2!1sen!2sin"
                         width="100%"
                         height="450"
-                        frameBorder="0"
                         style={{ border: 0 }}
                         allowFullScreen
                         aria-hidden="false"
@@ -107,11 +106,7 @@ const ContactUs = () => {
                         >
                             <i className="fa fa-phone"></i>
                         </a>
-                        <p>
-                            <i>
-                                <h5>+91- 9313000121</h5>
-                            </i>
-                        </p>
+                        <p>+91- 9313000121</p>
                     </div>
                     <div className="col-md-4">
                         <a

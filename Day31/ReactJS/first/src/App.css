@@ -439,6 +439,78 @@ footer {
   background-color: #218838;
 }
 
+/* ------------Product.jsx---------- */
+
+.product-card1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row{
+  display: flex;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.tz-gallery .row > div {
+  padding: 5px;
+}
+
+.tz-gallery .lightbox img {
+  width: 50%;
+  height: auto;
+  border-radius: 0;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.title-p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.desc-p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.price {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+#card-btn-p {
+  background-color:#0d6efd;
+  color: #fff;
+  border: none;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0px;
+}
+
+#card-btn-p:hover {
+  background-color: #218838;
+}
+
 
 /*---------footer------------- */
 

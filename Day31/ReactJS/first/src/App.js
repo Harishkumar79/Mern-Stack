@@ -7,6 +7,7 @@ import About from './Components/Pages/About';
 import Contact from './Components/Pages/Contact';
 import Home from './Components/Pages/Home';
 import ProductList from './Components/Products/ProductList';
+import Product from './Components/Products/Product';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<ProductList />} />
+          <Route path="/:id" element={<Product />} /> 
           <Route path="/profile/:uname" element={<Profile />} />
           <Route path="*" element={<h1>Page Not Found !</h1>} />
         </Routes>
