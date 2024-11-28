@@ -11,6 +11,7 @@ import Product from './Components/Products/Product';
 import Admin from './Components/Admin/Admin';
 
 function App() {
+  const user = ["Harish",2003,"Anadra"];
   return (
     <>
         <Nav />
@@ -20,7 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<ProductList />} />
           <Route path="/:id" element={<Product />} /> 
-          <Route path="/profile/:uname" element={<Profile />} />
+          <Route path="/profile" element={<Profile data={user} />} />
 
           <Route path="/admin" element={<Admin />}>
             <Route path='dash' element={<h1>Dashboard</h1>} />
