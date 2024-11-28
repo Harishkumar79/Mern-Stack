@@ -15,11 +15,16 @@ ul {
   padding: 10px;
   margin: 10px 20px;
 
+
   li {
     font-size: 0.875rem;
     letter-spacing: 0.125rem;
     font-weight: 700;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 /* -----------home.jsx---------- */
@@ -201,22 +206,18 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: $text;
-  background: $white;
-  text-rendering: optimizeLegibility;
 }
 
 h1,
 h2,
 h3 {
   font-family: 'EB Garamond', serif;
-  color: $black;
   line-height: 1.1;
 }
 
 h2,
 h3 {
-  color: $black;
+  color: black;
   font-weight: 400;
 }
 
@@ -248,15 +249,6 @@ p {
   }
 }
 
-a {
-  color: $gray;
-  text-decoration: none;
-
-  &:hover {
-    color: $black;
-  }
-}
-
 blockquote {
   font-style: italic;
   text-align: center;
@@ -276,7 +268,7 @@ blockquote {
 }
 
 #logo {
-  color: $black;
+  color: black;
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: 0.125rem;
@@ -315,7 +307,7 @@ footer {
   text-align: center;
 }
 
-@media (min-width: $md) {
+@media (min-width: md) {
   body {
     font-size: 1.125rem;
   }
@@ -377,7 +369,8 @@ footer {
   padding: 16px;
   margin: 10px 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Adjust as per your layout */
+  width: 300px;
+  /* Adjust as per your layout */
 }
 
 .img img {
@@ -425,7 +418,7 @@ footer {
 }
 
 #card-btn {
-  background-color:#0d6efd;
+  background-color: #0d6efd;
   color: #fff;
   border: none;
   width: fit-content;
@@ -454,16 +447,16 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.row{
+.row {
   display: flex;
   margin-top: calc(-1* var(--bs-gutter-y));
   margin-right: calc(-.5* var(--bs-gutter-x));
   margin-left: calc(-.5* var(--bs-gutter-x));
   justify-content: space-evenly;
-  align-items: baseline;
   flex-wrap: wrap;
 }
-.tz-gallery .row > div {
+
+.tz-gallery .row>div {
   padding: 5px;
 }
 
@@ -497,7 +490,7 @@ footer {
 }
 
 #card-btn-p {
-  background-color:#0d6efd;
+  background-color: #0d6efd;
   color: #fff;
   border: none;
   width: fit-content;
@@ -509,6 +502,46 @@ footer {
 
 #card-btn-p:hover {
   background-color: #218838;
+}
+
+
+
+/* -----------------Admin.jsx------------ */
+.A-box {
+  position: relative;
+  font-size: 2rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  margin:12px 20px;
+  padding: 5px;
+  height: 75vh;
+  box-shadow:0 4px 10px 5px rgba(0, 0, 0, 0.2);
+  ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.content-div{
+  display: flex;
+  position: absolute;
+  border:2px solid rgb(0, 0, 0 , 0.5);
+  width: 14vw;
+  height: 65vh;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.outlet{
+  border:2px solid rgb(0, 0, 0 , 0.5);
+  padding-top: 20px;
+  width: 80vw;
+  float: right;
+  height: 65vh;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 

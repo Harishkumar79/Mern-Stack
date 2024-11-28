@@ -8,6 +8,7 @@ import Contact from './Components/Pages/Contact';
 import Home from './Components/Pages/Home';
 import ProductList from './Components/Products/ProductList';
 import Product from './Components/Products/Product';
+import Admin from './Components/Admin/Admin';
 
 function App() {
   return (
@@ -20,6 +21,12 @@ function App() {
           <Route path="/products" element={<ProductList />} />
           <Route path="/:id" element={<Product />} /> 
           <Route path="/profile/:uname" element={<Profile />} />
+
+          <Route path="/admin" element={<Admin />}>
+            <Route path='dash' element={<h1>Dashboard</h1>} />
+            <Route path='product' element={<h1>Products</h1>} />
+          </Route>
+
           <Route path="*" element={<h1>Page Not Found !</h1>} />
         </Routes>
         <Footer />
