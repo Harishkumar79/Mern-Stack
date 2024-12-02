@@ -6,8 +6,8 @@ function Nav() {
         <>
             <ul>
                 <li><NavLink to={'/states'}>States</NavLink></li>
-                <li><NavLink to={'/states'}>States</NavLink></li>
-                <li><NavLink to={'/states'}>States</NavLink></li>
+                <li><NavLink to={'/events'}>Events</NavLink></li>
+                <li><NavLink to={'/effects'}>Effects</NavLink></li>
             </ul>
         </>
     );
