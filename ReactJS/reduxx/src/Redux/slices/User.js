@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const userList = createAsyncThunk("userList", async () => {
-    const api = await axios.get("https://jsonplaceholder.typicode.com/users");
+    const api = await axios.get("http://localhost:5000/userlist");
     console.log(api.data);
     return api.data;
 })
