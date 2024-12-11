@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { inc, dec, auser } from "./Redux/slices/Counter";
 import { useEffect, useState } from "react";
 import { userList } from "./Redux/slices/User";
+import { userRegister } from "./Redux/slices/User";
 
 function App() {
   var dispatch = useDispatch();
@@ -13,6 +14,13 @@ function App() {
     console.log("useEffect called");
     dispatch(userList());// eslint-disable-next-line
   }, [])
+
+  var [user , setuser] = useState();
+
+  const setdataa = () =>{
+    dispatch(userRegister(user));
+  }
+
 
   return (
     <>
@@ -26,6 +34,10 @@ function App() {
       <button type="button" onClick={() => dispatch(auser(choice))}>Change on user input</button>
       <hr />
       <h1>APT fetch</h1>
+      <h1>Form Data</h1>
+      <input type="text" name="username" onChange={(e)=>{setuser({...user ,[e.target.name]:e.target.value}); console.log(user)}} />
+      <input type="password" name="password" onChange={(e)=>{setuser({...user ,[e.target.name]:e.target.value});console.log(user)}} />
+      <button type="submit" onClick={()=>setdataa()}>Send</button>
     </>
   );
 }

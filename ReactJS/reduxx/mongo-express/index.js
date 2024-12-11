@@ -3,6 +3,7 @@ var app = express();
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var cors = require("cors");
+const { data } = require("react-router-dom");
 
 //middle were
 app.use(cors());
@@ -105,6 +106,14 @@ app.get('/userlist', async (req,res) => {
     var data = await db.collection("Express").findOne({username:"hk"});
     console.log(data);
     res.json(data);
+})
+
+// for send data into mongo-express. example api
+app.post('/register',(req, res) => {
+    db.collection("Express").insertOne(req.body,(err) =>{
+        if(err) throw err;
+        res.send("Done Thank you");
+    })
 })
 
 
